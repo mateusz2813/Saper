@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_PwSG__Lab3.Properties" GeneratedClassName="HighScore">
+  <Profiles />
+  <Settings>
+    <Setting Name="Wyniki" Type="System.Collections.Generic.List&lt;Wygrana&gt;" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PIĄTKA</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
