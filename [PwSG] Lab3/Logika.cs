@@ -96,7 +96,6 @@ namespace _PwSG__Lab3
     {
         private Wartosci[] _wartosciPol;
         private Widok[] _odkrytePole;
-        private int _prawdopodobienstwo;
         private int _kolumny;
         private int _wiersze;
         private bool _zablokowana;
@@ -107,7 +106,6 @@ namespace _PwSG__Lab3
         {
             this._wartosciPol = Logika.WartosciPol;
             this._odkrytePole = Logika.OdkrytePole;
-            this._prawdopodobienstwo = Logika.Prawdopodobienstwo;
             this._wiersze = Logika.Wiersze;
             this._kolumny = Logika.Kolumny;
             this._zablokowana = Logika.Zablokowana;
@@ -160,8 +158,6 @@ namespace _PwSG__Lab3
             Logika.Wiersze = z._wiersze;
             Logika.MainForm.nowaPlansza();
 
-
-            Logika.Prawdopodobienstwo = z._prawdopodobienstwo;
             Logika.OdkrytePole = z._odkrytePole;
             Logika.WartosciPol = z._wartosciPol;
 
