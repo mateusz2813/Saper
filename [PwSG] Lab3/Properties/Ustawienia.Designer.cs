@@ -130,5 +130,16 @@ namespace _PwSG__Lab3.Properties {
                 this["ObrazFlaga"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.Generic.List<Wygrana> Wyniki {
+            get {
+                return ((global::System.Collections.Generic.List<Wygrana>)(this["Wyniki"]));
+            }
+            set {
+                this["Wyniki"] = value;
+            }
+        }
     }
 }

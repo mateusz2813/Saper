@@ -5,8 +5,6 @@ using System.Windows.Forms;
 
 namespace _PwSG__Lab3
 {
-    //TO DO:
-    // #porzadek w ustawieniach
     public partial class Form1 : Form
     {
         public Form1()
@@ -100,7 +98,6 @@ namespace _PwSG__Lab3
         private void nowaGraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             nowaPlansza();
-            Logika.Czas = DateTime.Now;
 
             Logika.WartosciPol = new Wartosci[Logika.Kolumny * Logika.Wiersze];
             Logika.OdkrytePole = new Widok[Logika.Kolumny * Logika.Wiersze];
@@ -121,14 +118,15 @@ namespace _PwSG__Lab3
                 Logika.OdkrytePole[i] = Widok.ZASLONIETE;
             }
             Logika.Zablokowana = false;
+
+            Logika.Czas = DateTime.Now;
+
             if (!czyBylaBomba)
             {
                 Logika.Zablokowana = true;
                 AddNewScoreDialog dial = new AddNewScoreDialog();
                 dial.Show();
             }
-
-
         }
 
         private bool czyFlagiNaBombach()
@@ -327,6 +325,5 @@ namespace _PwSG__Lab3
             HighscoresForm dlg1 = new HighscoresForm();
             dlg1.Show();
         }
-
     }
 }

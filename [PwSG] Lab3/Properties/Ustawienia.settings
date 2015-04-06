@@ -29,5 +29,8 @@
     <Setting Name="ObrazFlaga" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="Wyniki" Type="System.Collections.Generic.List&lt;Wygrana&gt;" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

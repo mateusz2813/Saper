@@ -54,8 +54,8 @@ namespace _PwSG__Lab3
 
             Logika.Wyniki.Add(w);
 
-            Properties.HighScore.Default.Save();
-            Properties.HighScore.Default.Reload();
+            Properties.Ustawienia.Default.Save();
+            Properties.Ustawienia.Default.Reload();
             
             this.Close();
         }

@@ -27,9 +27,12 @@ namespace _PwSG__Lab3
 
         public static int Wiersze
         {
-            get { return Properties.Ustawienia.Default.Wiersze;  }
-            set { Properties.Ustawienia.Default.Wiersze = value;
-            Properties.Ustawienia.Default.Save(); }
+            get { return Properties.Ustawienia.Default.Wiersze; }
+            set
+            {
+                Properties.Ustawienia.Default.Wiersze = value;
+                Properties.Ustawienia.Default.Save();
+            }
         }
         public static int Kolumny
         {
@@ -76,14 +79,13 @@ namespace _PwSG__Lab3
 
         public static System.Collections.Generic.List<Wygrana> Wyniki
         {
-            get { return Properties.HighScore.Default.Wyniki; }
-            set { Properties.HighScore.Default.Wyniki = value; Properties.HighScore.Default.Save(); Properties.HighScore.Default.Reload(); }
+            get { return Properties.Ustawienia.Default.Wyniki; }
+            set { Properties.Ustawienia.Default.Wyniki = value; Properties.Ustawienia.Default.Save(); Properties.Ustawienia.Default.Reload(); }
         }
 
         public static Button[] Pola { get; set; }
         public static Wartosci[] WartosciPol { get; set; }
         public static Widok[] OdkrytePole { get; set; }
-
 
         public static Form1 MainForm { get; set; }
 
@@ -154,17 +156,12 @@ namespace _PwSG__Lab3
             stream.Close();
 
 
-            if (Logika.Kolumny != z._kolumny || Logika.Wiersze != z._wiersze || Logika.Pola == null)
-            {
-                Logika.Kolumny = z._kolumny;
-                Logika.Wiersze = z._wiersze;
-                Logika.MainForm.nowaPlansza();
-            }
-            else
-                Logika.MainForm.zaslonWszystkiePola();
+            Logika.Kolumny = z._kolumny;
+            Logika.Wiersze = z._wiersze;
+            Logika.MainForm.nowaPlansza();
+
 
             Logika.Prawdopodobienstwo = z._prawdopodobienstwo;
-
             Logika.OdkrytePole = z._odkrytePole;
             Logika.WartosciPol = z._wartosciPol;
 
