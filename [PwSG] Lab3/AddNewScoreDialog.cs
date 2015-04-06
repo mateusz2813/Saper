@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace _PwSG__Lab3
 {
+    [Serializable]
     public class Wygrana
     {
         //w xml serializacja tylko publicznych WLASCIWOSCI
